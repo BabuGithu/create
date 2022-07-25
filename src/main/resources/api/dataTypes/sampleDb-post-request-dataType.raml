@@ -1,0 +1,21 @@
+#%RAML 1.0 DataType
+ description: post data to DB
+ properties:
+   job:
+     properties:
+      id:
+        type: integer
+      searchField:
+        type: string
+      status:
+        type: string
+      courses:
+         items:
+           type: any
+
+
+      enrollments:
+         items: 
+           type: any      
+        
+  

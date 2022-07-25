@@ -1,0 +1,25 @@
+{
+   "job" : {
+       "id" : 12345,
+       "searchField" : "1221",
+       "status": "W",
+       "courses":[
+           {
+               "courseId":"CSCI_101",
+               "courseSisId":"CSCI_101_S01_1221_C1",
+               "courseName":"Computer Science 101",
+               "termId":"1221_01"
+           }
+       ],              
+       "enrollments":[
+           {
+               "courseId":"MATH_101",
+               "userId":"jxp007",
+               "userSisId":"joe.xavier.patton",
+               "enrollmentType":"undergrad",
+               "enrollmentState":"enrolled",
+               "username":"joe.xavier@strategiced.com"               
+           }
+       ]
+   }
+}

@@ -1,0 +1,39 @@
+#%RAML 1.0
+baseUri: https://anypoint.mulesoft.com/mocking/api/v1
+title: jobdetails.raml
+/jobs:
+  post:
+      body:
+        application/json:
+          type: !include dataTypes/sampleDb-post-request-dataType.raml
+          example: !include examples/sampledb-request-example.json
+      responses:
+        200:
+         body:
+              application/json:
+                example:
+                  {"message": "created"}
+                    
+        500:
+          body:
+           application/json:
+             example:
+               {"message": "service unavaialbe"}                       
+  /{jobId}:
+    get:
+      responses:
+        200:
+          body:
+            application/json:
+              example:
+                !include examples/sampledb-request-example.json
+        500:
+          body:
+            application/json:
+                  example:
+                    {
+                      message: "service unavailable"
+                    }    
+                                                                                         
+
+                                                         
